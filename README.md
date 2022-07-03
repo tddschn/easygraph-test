@@ -25,7 +25,7 @@ This is a work in progress, and we work closely with the EasyGraph developers to
 - `float` result are compared with `pytest.approx()`
 - Testing dataset: see [datasets](./datasets/).
   - The project is focusing on testing the C bindings at the moment, and the `eg.GraphC` class has limited methods for loading data, so
-  - The only dataset in used currently is the [`Karate Club undirected graph`](http://vlado.fmf.uni-lj.si/pub/networks/data/Ucinet/UciData.htm) dataset.
+  - The only dataset in used currently is the [`Karate Club undirected graph`](http://vlado.fmf.uni-lj.si/pub/networks/data/Ucinet/UciData.htm) dataset, and I've convert the data to edgelist [here](./karateclub.edgelist).
 
 ## Setup
 
