@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "easygraph-test"
+version = "0.1.0"
+description = ""
+authors = ["Teddy Xinyuan Chen <45612704+tddschn@users.noreply.github.com>"]
+readme = "README.md"
+packages = [{include = "easygraph_test"}]
+
+[tool.poetry.dependencies]
+python = ">=3.9,<3.10"
+pytest = "^7.1.2"
+Python-EasyGraph = "^0.2a38"
+networkx = "^2.8.4"
+
+
+[tool.poetry.group.dev.dependencies]
+black = "^22.6.0"
+rich = "^12.4.4"
+ipython = "^8.4.0"
+better-exceptions = "^0.3.3"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
