@@ -9,7 +9,7 @@ from pathlib import Path
 
 @pytest.fixture
 def karateclub_edgelist_abspath() -> str:
-    return str((Path(__file__).parent / 'karateclub.edgelist').resolve())
+    return str((Path(__file__).parent / 'data' / 'karateclub.edgelist').resolve())
 
 
 @pytest.fixture

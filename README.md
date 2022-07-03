@@ -25,7 +25,7 @@ This is a work in progress, and we work closely with the EasyGraph developers to
 - `float` result are compared with `pytest.approx()`
 - Testing dataset: see [datasets](./datasets/).
   - The project is focusing on testing the C bindings at the moment, and the `eg.GraphC` class has limited methods for loading data, so
-  - The only dataset in used currently is the [`Karate Club undirected graph`](http://vlado.fmf.uni-lj.si/pub/networks/data/Ucinet/UciData.htm) dataset, and I've convert the data to edgelist [here](./karateclub.edgelist).
+  - The only dataset in used currently is the [`Karate Club undirected graph`](http://vlado.fmf.uni-lj.si/pub/networks/data/Ucinet/UciData.htm) dataset, and I've convert the data to edgelist [here](./data/karateclub.edgelist).
 
 ## Setup
 
@@ -49,6 +49,6 @@ poetry run pytest
 ## Issues with the C bindings as per easygraph v0.2a38
 
 - Only the undirected graph class `eg.GraphC` is implemented, 
-  - Tt lacks many attributes (e.g. `._adj`, `__dict__`), methods (especially the dunder ones like `__iter__`) and functionalities compared the its pure Python counterpart `eg.Graph`.
+  - It lacks many attributes (e.g. `._adj`, `__dict__`), methods (especially the dunder ones like `__iter__`) and functionalities compared the its pure Python counterpart `eg.Graph`.
   - Hangs or throws seg faults when you run the [example codes](https://easy-graph.github.io/tutorial.html) on the class.
   - It uses different data structures for storing, and it could bite you if you expect them to behave like `eg.Graph`.
