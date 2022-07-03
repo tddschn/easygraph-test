@@ -3,6 +3,7 @@ easygraph
 edgelist
 Flickr
 flickr
+graphc
 karateclub
 loadmat
 maxval
