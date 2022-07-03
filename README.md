@@ -1,5 +1,7 @@
 # EasyGraph Testing codes
 
+This repository contains testing codes for [EasyGraph](https://github.com/easy-graph/Easy-Graph).
+
 ## Setup
 
 ```bash
