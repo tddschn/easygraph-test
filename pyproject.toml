@@ -16,7 +16,7 @@ networkx = "^2.8.4"
 [tool.poetry.group.dev.dependencies]
 black = "^22.6.0"
 rich = "^12.4.4"
-ipython = "^8.4.0"
+ipython = "^8.10.0"
 better-exceptions = "^0.3.3"
 
 [build-system]
